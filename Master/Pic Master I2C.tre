@@ -1,0 +1,11 @@
+ÀÄPic Master I2C
+   ÀÄMAIN  0/50  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄkbd_init  0/3  Ram=0
+      ÃÄkbd_getc  0/138  Ram=3
+      ³  ÃÄ@MUL88  (Inline)  Ram=2
+      ³  ÀÄ@const607  0/16  Ram=0
+      ÃÄenvio_I2C  0/19  Ram=0
+      ³  ÃÄ@I2C_WRITEU_1  0/16  Ram=1
+      ³  ÀÄ@I2C_WRITEU_1  0/16  Ram=1
+      ÀÄ@delay_ms1  0/23  Ram=1

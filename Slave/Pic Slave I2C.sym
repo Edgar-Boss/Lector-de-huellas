@@ -1,0 +1,141 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+006     kbd
+006     lcd
+006     lcdlat
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     kbd_getc.kbd_call_count
+021.0   kbd_getc.kbd_down
+022     kbd_getc.last_key
+023     kbd_getc.col
+024     @TRIS_C
+025     MAIN.dato
+026     MAIN.ban
+027     MAIN.exit
+028-040 MAIN.finger
+041-050 MAIN.aux
+051     MAIN.indx
+052     MAIN.indy
+053     MAIN.comp
+054     MAIN.k
+055     MAIN.acceso
+056     MAIN.k
+057     MAIN.j
+058     lcd_init.i
+058     @MUL88.P1
+058     MAIN.@SCRATCH1
+058     @PSTRINGC7_646.@SCRATCH1
+059     @MUL88.P1
+059     @PRINTF_D_646.P2
+059     @PSTRINGCN7_646.P3
+059-05C lcd_init.LCD_INIT_STRING
+059     MAIN.@SCRATCH2
+059     @PSTRINGC7_646.@SCRATCH2
+05A     @PRINTF_D_646.P1
+05A     MAIN.@SCRATCH3
+05A     @PSTRINGC7_646.@SCRATCH3
+05A     @PSTRINGCN7_646.@SCRATCH1
+05B     MAIN.@SCRATCH4
+05B     @PSTRINGC7_646.@SCRATCH4
+05B     @PSTRINGCN7_646.@SCRATCH2
+05B     @PRINTF_D_646.@SCRATCH1
+05C     @PSTRINGCN7_646.@SCRATCH3
+05C     @PRINTF_D_646.@SCRATCH2
+05D     lcd_init.@SCRATCH1
+05D     @PSTRINGCN7_646.@SCRATCH4
+05D     @PRINTF_D_646.@SCRATCH3
+05E     @PRINTF_D_646.@SCRATCH4
+05F     @DIV88.P1
+05F     lcd_putc.c
+060     @delay_ms1.P1
+060     lcd_gotoxy.x
+060     @DIV88.P1
+061     lcd_gotoxy.y
+061     @DIV88.@SCRATCH1
+062     lcd_gotoxy.address
+063     lcd_gotoxy.@SCRATCH1
+064     lcd_send_byte.address
+065     lcd_send_byte.n
+066     lcd_read_byte.low
+066     lcd_send_byte.@SCRATCH1
+067     lcd_read_byte.high
+067     lcd_send_nibble.n
+068     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086     lcdtris
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const671.call
+00000A  @const673.call
+00000E  @const676.call
+000015  @const678.call
+00001D  @const679.call
+000022  @const690.call
+000028  @const694.call
+00002B  @const696.call
+000031  @const700.call
+000039  @const704.call
+00003D  @const705.call
+000045  @delay_ms1
+00005A  lcd_send_nibble
+000066  lcd_read_nibble
+00006C  lcd_send_byte
+000072  lcd_read_byte
+0000AC  lcd_init
+0000EA  lcd_gotoxy
+0000FC  lcd_putc
+000128  @PSTRINGC7_646
+00017E  @PSTRINGCN7_646
+0001D7  @DIV88
+0001EC  @PRINTF_D_646
+000245  @MUL88
+00026A  MAIN
+00026A  @cinit1
+000285  @cinit2
+
+Project Directory:
+    C:\Users\SNK93\OneDrive\Documentos\BUAP\Microprocesadores\Practicas\Proyecto\Slave\
+
+Project Files:
+    Pic Slave I2C.c                                         [24-nov.-20 00:20  CRC=716FFDA5]
+    ..\..\..\..\..\..\..\..\..\Program Files\PICC\Devices\16F876a.h [12-nov.-13 13:35  CRC=7FE1E080]
+    ..\..\..\..\..\..\..\..\..\Program Files\PICC\Drivers\kbd.c [23-sep.-10 08:09  CRC=8814BCFC]
+    ..\..\..\..\..\..\..\..\..\Program Files\PICC\Drivers\lcd.c [19-sep.-13 14:38  CRC=D1A6378A]
+
+Source signature=1CB30A35
+
+Units:
+    Pic Slave I2C (main)
+
+Compiler Settings:
+    Processor:      PIC16F876A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Pic Slave I2C.xsym
+    Errors:      Pic Slave I2C.err
+    Ext Symbols: Pic Slave I2C.esym
+    INHX8:       Pic Slave I2C.hex
+    Symbols:     Pic Slave I2C.sym
+    List:        Pic Slave I2C.lst
+    Debug/COFF:  Pic Slave I2C.cof
+    Project:     Pic Slave I2C.ccspjt
+    Call Tree:   Pic Slave I2C.tre
+    Statistics:  Pic Slave I2C.STA

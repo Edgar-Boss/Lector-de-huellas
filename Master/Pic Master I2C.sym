@@ -1,0 +1,77 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+006     kbd
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     kbd_getc.kbd_call_count
+022.0   kbd_getc.kbd_down
+023     kbd_getc.last_key
+024     kbd_getc.col
+025     tecla
+026     kbd_getc.kchar
+026     @I2C_WRITEU_1.P1
+026     @delay_ms1.P2
+027     kbd_getc.row
+028     @MUL88.P1
+028     kbd_getc.@SCRATCH1
+029     @MUL88.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  KEYS.call
+000008  KEYS.data
+000014  kbd_init
+000017  kbd_getc
+000067  @MUL88
+0000A1  @I2C_WRITEU_1
+0000B1  envio_I2C
+0000C4  @delay_ms1
+0000DB  MAIN
+0000DB  @cinit1
+0000F7  @cinit2
+
+Project Directory:
+    C:\Users\SNK93\OneDrive\Escritorio\Proyecto\Proyecto\Proyecto\Master\
+
+Project Files:
+    Pic Master I2C.c                                        [23-nov.-20 15:04  CRC=D5AF45EC]
+    ..\..\..\..\..\..\..\..\Program Files\PICC\Devices\16F876a.h [12-nov.-13 13:35  CRC=7FE1E080]
+    ..\..\..\..\..\..\..\..\Program Files\PICC\Drivers\kbd.c [23-sep.-10 08:09  CRC=8814BCFC]
+
+Source signature=65BAA064
+
+Units:
+    Pic Master I2C (main)
+
+Compiler Settings:
+    Processor:      PIC16F876A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Pic Master I2C.xsym
+    Errors:      Pic Master I2C.err
+    Ext Symbols: Pic Master I2C.esym
+    INHX8:       Pic Master I2C.hex
+    Symbols:     Pic Master I2C.sym
+    List:        Pic Master I2C.lst
+    Debug/COFF:  Pic Master I2C.cof
+    Project:     Pic Master I2C.ccspjt
+    Call Tree:   Pic Master I2C.tre
+    Statistics:  Pic Master I2C.STA

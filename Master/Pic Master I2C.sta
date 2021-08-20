@@ -1,0 +1,55 @@
+
+ROM used:   269/8192 (3%)
+            269/8192 (3%) including unused fragments
+
+            0.3 Average locations per line
+            5.1 Average locations per statement
+
+RAM used:   11/368 (3%) at main() level
+            15/368 (4%) worst case
+
+Stack used: 2 worst case (2 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   53    13  25  Pic Master I2C.c
+  620     0   0  ..\..\..\..\..\..\..\..\Program Files\PICC\Devices\16F876a.h
+  135    40  75  ..\..\..\..\..\..\..\..\Program Files\PICC\Drivers\kbd.c
+----- -----
+  808    53 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     23   9    1             @delay_ms1
+0     16   6    1             @I2C_WRITEU_1
+0     16   6    0             @const607
+0      3   1    0     3  0.0  kbd_init
+0    138  51    3  4540 10.2  kbd_getc
+ Inline         2             @MUL88
+0     19   7    0    55  1.1  envio_I2C
+0     50  19    0   134  3.0  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              53
+    Comments                153
+    Volume (V)              5065
+    Difficulty (D)          15.6
+    Effort to implement (E) 79032
+    Time to implement (T)   1 hours, 13 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   13
+    Maintainability (MI)    83
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   265  1779  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
